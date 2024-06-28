@@ -1,4 +1,4 @@
-package day13.emp.vo;
+package day13.poly.vo;
 
 public class Cat extends Animal {
 

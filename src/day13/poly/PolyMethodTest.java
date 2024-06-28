@@ -1,9 +1,8 @@
-package day13.emp.exec;
+package day13.poly;
 
-import day11.exec.aa.A;
-import day13.emp.vo.Animal;
-import day13.emp.vo.Cat;
-import day13.emp.vo.Dog;
+import day13.poly.vo.Animal;
+import day13.poly.vo.Cat;
+import day13.poly.vo.Dog;
 
 public class PolyMethodTest {
 
