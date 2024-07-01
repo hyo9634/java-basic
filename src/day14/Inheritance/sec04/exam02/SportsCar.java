@@ -8,11 +8,9 @@ public class SportsCar extends Car {
   }
 
   // 오버라이딩을 할 수 없음
-	/*
-	@Override
-	public void stop() {
-		System.out.println("스포츠카를 멈춤");
-		speed = 0;
-	}
-	*/
+
+  public void stop1() {
+    System.out.println("스포츠카를 멈춤");
+    speed = 0;
+  }
 }
