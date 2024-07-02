@@ -5,10 +5,22 @@ public abstract class Phone {
   //필드 선언
   String owner;
 
+  Phone() {
+  }
+
   //생성자 선언
-  Phone(String owner) {
+  public Phone(String owner) {
     this.owner = owner;
   }
+
+  abstract void sendVoice(); //추상메서드
+
+  abstract void resiveVoice(); //추상메서드
+
+  void calling() {
+  }
+
+  ;  //{ } 설정이 되면 구현메서드로 봄
 
   //메소드 선언
   void turnOn() {
