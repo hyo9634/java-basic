@@ -1,4 +1,4 @@
-package day15.interfaceEx.sec9.exam01;
+package day15.interfaceEx.sec09.exam01;
 
 public class PromotionExample {
 

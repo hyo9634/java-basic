@@ -1,4 +1,4 @@
-package day15.interfaceEx.sec9.exam02;
+package day15.interfaceEx.sec09.exam02;
 
 public class Bus implements Vehicle {
 

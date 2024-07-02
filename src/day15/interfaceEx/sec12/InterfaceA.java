@@ -1,6 +1,6 @@
 package day15.interfaceEx.sec12;
 
-public sealed interface InterfaceA permits InterfaceB {
+public interface InterfaceA {
 
   void methodA();
 }
