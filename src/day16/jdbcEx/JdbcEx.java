@@ -16,7 +16,7 @@ public class JdbcEx {
     Statement stmt = null;
     ResultSet rs = null;
     try {
-      //Class.forName("com.mysql.cj.jdbc.Driver");
+      Class.forName("com.mysql.cj.jdbc.Driver");
       con = DriverManager.getConnection(url, userName, password);
       System.out.println(con);
       stmt = con.createStatement();
