@@ -3,6 +3,7 @@ package day16.jdbcEx;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 public class JdbcEx {
@@ -12,9 +13,11 @@ public class JdbcEx {
     String userName = "root";
     String password = "1234";
     String query = "SELECT * FROM member";
+
     Connection con = null;
     Statement stmt = null;
     ResultSet rs = null;
+
     try {
       Class.forName("com.mysql.cj.jdbc.Driver");
       con = DriverManager.getConnection(url, userName, password);
@@ -28,11 +31,15 @@ public class JdbcEx {
         String job = rs.getString("job");
         System.out.printf("id : %d name : %s  job : %s", id, name, job);
       }
-
-    } catch (Exception e) {
-      e.getMessage();
-
+      rs.close();
+      stmt.close();
+      con.close();
+    } catch (ClassNotFoundException e) {
+      throw new RuntimeException(e);
+    } catch (SQLException e) {
+      throw new RuntimeException(e);
     }
+
 
   }
 
