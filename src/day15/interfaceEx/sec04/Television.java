@@ -29,4 +29,20 @@ public class Television implements RemoteControl {
     }
     System.out.println("현재 TV 볼륨: " + volume);
   }
-}	
+
+  //필드
+  private int rememberVolume;
+
+  @Override
+  public void setMute(boolean mute) {
+    if (mute) {
+      this.rememberVolume = this.volume;
+      System.out.println("쉿 조용히");
+      setVolume(MIN_VOLUME);
+    } else {
+      System.out.println("쉿 조용히 해제!");
+      setVolume(rememberVolume);
+    }
+
+  }
+}
