@@ -11,9 +11,9 @@ public class JdbcEx {
 
   public static void main(String[] args) {
     System.out.println("==회원 정보 입력 후 조회===");
-    //회원의 정보를 사용자 받는 기능  (static 메소드로)
+    //회원의 정보를 사용자 받는 기능  (메소드로)
     //Member 클래스(VO)
-    memberInsert( Member member );
+    memberInsert();
     memberSearch();
     System.out.println("==회원 정보수정 후 조회===");
     memberUpdate();
